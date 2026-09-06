@@ -1,3 +1,1 @@
 """med-tokener: comparing general-purpose and medical tokenizers."""
-
-from med_tokener import *  # noqa: F403
