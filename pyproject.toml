@@ -1,0 +1,25 @@
+[project]
+name = "med-tokener"
+version = "0.1.0"
+description = "Compare general-purpose vs. medical tokenizers and train a domain-specific BPE tokenizer"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Murtuza Saifee", email = "[EMAIL_ADDRESS]" }
+]
+dependencies = [
+    "datasets>=2.14",
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.1",
+    "sacremoses>=0.0.53",
+    "tokenizers>=0.15",
+    "transformers>=4.29",
+]
+
+[project.scripts]
+med-tokener = "med_tokener.pipeline:main"
+tokener = "med_tokener.pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
